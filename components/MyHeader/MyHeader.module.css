@@ -1,0 +1,27 @@
+.myHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 3rem;
+    width: 100%;
+    background: var(--clrMain);
+    z-index: 11;
+    padding: 0.625rem 2rem;
+    box-shadow: 0px 0px 10px var(--clrMain);
+}
+
+.myHeader ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5625rem;
+}
+
+.myHeader ul li {
+    transition: 0.1s;
+    color: white;
+}
+
+.myHeader ul li:hover {
+    color: var(--clrOlive);
+}

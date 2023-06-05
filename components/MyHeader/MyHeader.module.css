@@ -2,7 +2,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    min-height: 3rem;
     width: 100%;
     background: var(--clrMain);
     z-index: 11;
@@ -23,5 +22,9 @@
 }
 
 .myHeader ul li:hover {
+    color: var(--clrOlive);
+}
+
+.activeLink {
     color: var(--clrOlive);
 }

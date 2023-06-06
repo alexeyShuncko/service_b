@@ -1,0 +1,35 @@
+.container {
+    padding: 1.25rem;
+    display: flex;
+}
+
+.filter {
+    padding: 1.25rem;
+}
+
+.listFilter {
+    display: flex;
+    gap: 2rem;
+    padding: 0.625rem 0;
+    border-bottom: 0.0625rem solid var(--clrMain);
+    margin-top: 2.5rem;
+}
+
+.listFilter li {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.1s;
+    color: var(--clrOlive);
+}
+
+.listFilter li.activeItem {
+    color: var(--clrMain);
+}
+
+
+.logo {
+    font-weight: 800;
+    font-size: 4rem;
+    color: var(--clrMain);
+    text-transform: uppercase;
+}

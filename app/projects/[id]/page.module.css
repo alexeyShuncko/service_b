@@ -1,7 +1,7 @@
 .container {
     padding: 1.25rem;
     display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
     background: var(--clrLight);
     min-height: 100vh;
     animation: hid 1s;
@@ -30,6 +30,13 @@
     flex: 1;
 }
 
+.logo {
+    font-weight: 800;
+    font-size: 4rem;
+    color: var(--clrMain);
+    text-transform: uppercase;
+}
+
 .description {
     font-size: 1.5625rem;
 }
@@ -37,9 +44,15 @@
 .photoList {
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
 }
 
 .content {
     margin-left: 50vw;
+}
+
+.listContentItem {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.25rem;
 }

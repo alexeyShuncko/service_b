@@ -192,7 +192,7 @@ export default function Projects() {
 
   useEffect(() => {
     window.scrollTo(0, -window.scrollY);
-  }, [typeState]);
+  }, [filter, typeState]);
 
   const filterItem = ['Тип объекта', 'Услуги', 'Год', 'Статус работы'];
   const typeObj = ['БЦ', 'ТЦ', 'ДОУ', 'Стрит', 'МФК'];

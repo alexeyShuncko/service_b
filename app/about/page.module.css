@@ -1,0 +1,135 @@
+.container {
+    padding: 1.25rem;
+    display: flex;
+    margin-top: 2rem;
+    background: var(--clrLight);
+    min-height: 100vh;
+    animation: hid 1s;
+}
+
+@keyframes hid {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.filter {
+    position: fixed;
+    width: 60%;
+    padding: 1.25rem;
+}
+
+.listFilter {
+    display: flex;
+    gap: 2rem;
+    padding: 0.625rem 0;
+    border-bottom: 0.0625rem solid var(--clrOlive);
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    width: 70%;
+}
+
+
+.listFilter li {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.1s;
+    color: var(--clrOlive);
+}
+
+.listFilter li.activeItem {
+    color: var(--clrMain);
+}
+
+.listCategory {
+
+    padding: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.itemLi {
+    font-size: 1.125rem;
+    transition: 0.2s;
+}
+
+.itemLi:hover {
+    color: var(--clrOlive);
+}
+
+.activeLi {
+    font-size: 1.125rem;
+    color: var(--clrOlive);
+    font-weight: 800;
+    font-size: 1.5rem;
+    transition: 0.2s;
+}
+
+
+.logo {
+    font-size: 4rem;
+}
+
+
+
+.text {
+    font-size: 1.125rem;
+}
+
+.teamItem {
+    font-size: 1.125rem;
+    padding: 0.3125rem 0;
+    transition: 0.1s;
+}
+
+.teamItem:hover {
+    color: var(--clrOlive);
+}
+
+
+
+.content {
+    margin-left: 60vw;
+    padding: 1.25rem;
+}
+
+.listFhotosTeam {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.teamPhotos {
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+}
+
+.name {
+    line-height: 2.5em;
+    font-size: 1.375rem;
+}
+
+.listContentItem {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.25rem;
+}
+
+.listContentItem span {
+    font-size: 1.5625rem;
+}
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+
+}

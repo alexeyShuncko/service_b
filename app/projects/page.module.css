@@ -1,7 +1,7 @@
 .container {
     padding: 1.25rem;
     display: flex;
-    margin-top: 3rem;
+    margin-top: 2rem;
     background: var(--clrLight);
     min-height: 100vh;
     animation: hid 1s;
@@ -30,12 +30,12 @@
     border-bottom: 0.0625rem solid var(--clrOlive);
     margin-top: 2.5rem;
     margin-bottom: 1.25rem;
-    width: 75%;
+    width: 70%;
 }
 
 
 .listFilter li {
-    font-size: 1.25rem;
+    font-size: 1rem;
     cursor: pointer;
     transition: 0.1s;
     color: var(--clrOlive);

@@ -158,7 +158,7 @@ export default function ProjectItem({ params }) {
       <div className={s.content}>
         <ul className={s.photoList}>
           {data.image.map((photo, i) => (
-            <li key={i}>
+            <li key={i} className={s.listContentItem}>
               <Image src={photo} width={600} height={400} alt="Проект" />
             </li>
           ))}

@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 3rem);
+    gap: 6.25rem;
+    position: relative;
+}
+
+.container::after {
+    content: "";
+    background: url('../../public/contactsFon.jpg');
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.title {
+    font-size: 8.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--clrMain);
+    z-index: 10;
+}
+
+.container ul {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul li {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5625rem;
+    gap: 0.625rem;
+}
+
+.text {
+    font-size: 1rem;
+}

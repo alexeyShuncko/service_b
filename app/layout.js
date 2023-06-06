@@ -1,5 +1,19 @@
 import { MyHeader } from '@/components/MyHeader/MyHeader';
 import './globals.css';
+import localFont from 'next/font/local';
+
+const wellingtons = localFont({
+  src: [
+    {
+      path: '../public/fonts/TTWellingtons-ExtraBold.woff2',
+      weight: '800',
+    },
+    {
+      path: '../public/fonts/TTWellingtons-Regular.woff2',
+      weight: '400',
+    },
+  ],
+});
 
 export const metadata = {
   title: 'Сервис B+',
@@ -8,13 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <link
-          href="https://fonts.cdnfonts.com/css/tt-wellingtons-trl"
-          rel="stylesheet"
-        />
-      </head>
+    <html lang="en" className={wellingtons.className}>
       <body>
         <MyHeader />
         <main>{children}</main>

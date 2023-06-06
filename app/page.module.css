@@ -46,16 +46,6 @@
     transition: 0.5s ease-out;
 }
 
-@keyframes hid {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
 .blockText {
     position: relative;
 }
@@ -121,4 +111,14 @@
 
 .myFooter div:nth-child(2) {
     cursor: pointer;
+}
+
+@keyframes hid {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

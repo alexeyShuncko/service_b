@@ -18,15 +18,13 @@ export default function Home() {
   };
 
   useLayoutEffect(() => {
+    setTop(window.scrollY);
     document.addEventListener('scroll', handler);
     return () => document.removeEventListener('scroll', handler);
   }, []);
   useLayoutEffect(() => {
     const arrDiv = [...document.querySelectorAll("[data-id='fon']")];
     const heightW = window.innerHeight;
-    if (top === 0) {
-      return;
-    }
 
     if (top < heightW) {
       arrDiv[0].style.opacity = 1;
@@ -78,7 +76,6 @@ export default function Home() {
         <div className={s.blockText}>
           <span className={s.title}>Сервис B+</span>
           <span className={s.text}>
-            {' '}
             Любим недвижимоcть, <br></br> как людей
           </span>
         </div>
@@ -142,8 +139,8 @@ export default function Home() {
         />
         <div className={s.myFooter}>
           <div>
-            <a href="mailto:WELT@KLEINEWELT.RU"> WELT@KLEINEWELT.RU</a>
-            <a href="tel:+74955079517">+7 (495) 507–95–17</a>
+            <a href="mailto:info@adwill.ru">info@adwill.ru</a>
+            <a href="tel:+84956656253">8 (495) 665-62-53</a>
           </div>
           <div onClick={() => setLng(!lng)}>{lng ? 'RU' : 'EN'}</div>
         </div>

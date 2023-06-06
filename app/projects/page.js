@@ -203,7 +203,14 @@ export default function Projects() {
     <div className={s.container}>
       <div className={s.filter}>
         <div className={s.logo}>
-          <Image src={logo} width={450} alt="Логотип" />
+          <Image
+            src={logo}
+            fill={true}
+            alt="Логотип"
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          />
         </div>
         <div>
           <ul className={s.listFilter} onClick={filterHandler}>
@@ -258,7 +265,16 @@ export default function Projects() {
           {data.map((el) => (
             <li key={el.name}>
               <Link href={`/projects/${el.id}`} className={s.listContentItem}>
-                <Image src={el.image} width={600} height={400} alt="Проект" />
+                <div className={s.projectPhoto}>
+                  <Image
+                    src={el.image}
+                    fill={true}
+                    alt="Проект"
+                    sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+                  />
+                </div>
                 <span> {el.name}</span>
               </Link>
             </li>

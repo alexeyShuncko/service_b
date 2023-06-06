@@ -60,7 +60,7 @@ export default function About() {
       position: 'Заместитель генерального директора',
     },
     {
-      name: 'Школьна Ольга',
+      name: 'Школьная Ольга',
       photo: olga,
       id: 'olga',
       position: 'Финансовый директор',
@@ -91,7 +91,14 @@ export default function About() {
     <div className={s.container}>
       <div className={s.filter}>
         <div className={s.logo}>
-          <Image src={logo} width={450} alt="Логотип" />
+          <Image
+            src={logo}
+            fill={true}
+            alt="Логотип"
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          />
         </div>
         <div>
           <ul className={s.listFilter} onClick={filterHandler}>
@@ -147,8 +154,15 @@ export default function About() {
         {filter === 'О компании' && (
           <ul className={s.listFhotosTeam}>
             {about.map((img, i) => (
-              <li key={i}>
-                <Image src={img} width={450} height={300} alt="Фото" />
+              <li key={i} className={s.aboutPhotos}>
+                <Image
+                  src={img}
+                  fill={true}
+                  alt="Фото"
+                  sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+                />
               </li>
             ))}
           </ul>

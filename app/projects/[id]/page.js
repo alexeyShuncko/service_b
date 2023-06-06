@@ -144,14 +144,21 @@ export default function ProjectItem({ params }) {
       image: [foto1, foto2, foto3],
     },
   ];
-  console.log(dataInit);
+
   const data = dataInit.find((el) => el.id == params.id);
-  console.log(data);
+
   return (
     <div className={s.container}>
       <div className={s.filter}>
         <div className={s.logo}>
-          <Image src={logo} width={450} alt="Логотип" />
+          <Image
+            src={logo}
+            fill={true}
+            alt="Логотип"
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          />
         </div>
         <div className={s.description}>{data.description}</div>
       </div>
@@ -159,7 +166,7 @@ export default function ProjectItem({ params }) {
         <ul className={s.photoList}>
           {data.image.map((photo, i) => (
             <li key={i} className={s.listContentItem}>
-              <Image src={photo} width={600} height={400} alt="Проект" />
+              <Image src={photo} fill={true} alt="Проект" />
             </li>
           ))}
         </ul>

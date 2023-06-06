@@ -26,15 +26,12 @@
     gap: 5rem;
 }
 
-.filter div {
-    flex: 1;
-}
-
 .logo {
-    font-weight: 800;
+    position: relative;
     font-size: 4rem;
-    color: var(--clrMain);
-    text-transform: uppercase;
+    width: 28.125rem;
+    height: 1.35rem;
+    margin-top: 2.5rem;
 }
 
 .description {
@@ -51,8 +48,39 @@
 }
 
 .listContentItem {
+    position: relative;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    padding: 1.25rem;
+    margin-top: 1.25rem;
+    width: 37.5rem;
+    height: 25rem;
+}
+
+@media (max-width: 576px) {
+    .container {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .filter {
+        position: static;
+        width: 100%;
+        padding: 0;
+        gap: 2.5rem;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .listContentItem {
+        padding: 0;
+        width: 90vw;
+        height: calc(90vw/1.5);
+    }
+
+    .logo {
+        width: 85vw;
+        height: calc(85vw/21);
+    }
 }

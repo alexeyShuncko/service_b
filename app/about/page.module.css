@@ -31,6 +31,7 @@
     margin-top: 2.5rem;
     margin-bottom: 1.25rem;
     width: 70%;
+    align-items: center;
 }
 
 
@@ -46,7 +47,6 @@
 }
 
 .listCategory {
-
     padding: 1.5625rem;
     display: flex;
     flex-direction: column;
@@ -73,10 +73,12 @@
 
 
 .logo {
+    position: relative;
     font-size: 4rem;
+    width: 28.125rem;
+    height: 1.35rem;
+    margin-top: 2.5rem;
 }
-
-
 
 .text {
     font-size: 1.125rem;
@@ -99,6 +101,12 @@
     padding: 1.25rem;
 }
 
+.aboutPhotos {
+    position: relative;
+    width: 28.125rem;
+    height: 18.75rem;
+}
+
 .listFhotosTeam {
     display: flex;
     flex-direction: column;
@@ -108,6 +116,8 @@
 .teamPhotos {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 1.25rem;
 }
 
@@ -132,4 +142,47 @@
     flex-wrap: wrap;
     gap: 1.25rem;
 
+}
+
+
+@media (max-width: 576px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .filter {
+        position: static;
+        width: 100%;
+        padding: 0;
+    }
+
+    .listFilter {
+        width: 100%;
+        gap: 1rem;
+        padding: 0.625rem 0;
+    }
+
+    .listCategory {
+        padding: 0;
+        margin-bottom: 1.25rem;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .aboutPhotos {
+        width: 90vw;
+        height: calc(90vw/1.5);
+    }
+
+    .logo {
+        width: 85vw;
+        height: calc(85vw/21);
+    }
+
+    .teamPhotos {
+        padding: 0;
+    }
 }

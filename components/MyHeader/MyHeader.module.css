@@ -28,3 +28,17 @@
 .activeLink {
     color: var(--clrOlive);
 }
+
+
+
+@media (max-width: 576px) {
+    .myHeader {
+        padding: 0.625rem;
+        ;
+    }
+
+    .myHeader ul {
+        justify-content: center;
+        gap: 1.125rem;
+    }
+}

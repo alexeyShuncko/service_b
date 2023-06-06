@@ -74,10 +74,22 @@ export default function Home() {
           fill={true}
           alt="Природа"
           className={s.fonMain}
+          sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
         />
         <div className={s.blockText}>
-          <Image src={logo} width={900} alt="Логотип" className={s.logoImg} />
-          <span className={s.text}>
+          <div className={s.logoImg}>
+            <Image
+              src={logo}
+              fill={true}
+              alt="Логотип"
+              sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
+            />
+          </div>
+          <span className={s.textSlogan}>
             Любим недвижимоcть, <br></br> как людей
           </span>
         </div>
@@ -90,12 +102,22 @@ export default function Home() {
           alt="Природа"
           className={s.fon}
           style={{ opacity: 0 }}
+          sizes="(max-width: 768px) 100vw,
+          (max-width: 1200px) 50vw,
+          33vw"
         />
         <Link href={'/projects/1'} className={s.linkText}>
           <span className={s.textName}>Ресторан в горах</span>{' '}
         </Link>
         <div className={s.arrowBlock}>
-          <Image src={arrow} alt="Природа" fill={true} />
+          <Image
+            src={arrow}
+            alt="Природа"
+            fill={true}
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          />
         </div>
       </div>
       <div className={s.container}>
@@ -111,7 +133,14 @@ export default function Home() {
           <span className={s.textName}>MOD</span>
         </Link>
         <div className={s.arrowBlock}>
-          <Image src={arrow} alt="Природа" fill={true} />
+          <Image
+            src={arrow}
+            alt="Природа"
+            fill={true}
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          />
         </div>
       </div>
       <div className={s.container}>
@@ -127,7 +156,14 @@ export default function Home() {
           <span className={s.textName}>Гай-Кодзор</span>
         </Link>
         <div className={s.arrowBlock}>
-          <Image src={arrow} alt="Природа" fill={true} />
+          <Image
+            src={arrow}
+            alt="Природа"
+            fill={true}
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          />
         </div>
       </div>
       <div className={s.containerFooter}>

@@ -39,6 +39,10 @@
     cursor: pointer;
     transition: 0.1s;
     color: var(--clrOlive);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .listFilter li.activeItem {
@@ -46,7 +50,6 @@
 }
 
 .listCategory {
-
     padding: 1.5625rem;
     display: flex;
     flex-direction: column;
@@ -73,10 +76,11 @@
 
 
 .logo {
-    font-weight: 800;
+    position: relative;
     font-size: 4rem;
-    color: var(--clrMain);
-    text-transform: uppercase;
+    width: 28.125rem;
+    height: 1.35rem;
+    margin-top: 2.5rem;
 }
 
 .content {
@@ -92,4 +96,52 @@
 
 .listContentItem span {
     font-size: 1.5625rem;
+}
+
+.projectPhoto {
+    position: relative;
+    width: 37.5rem;
+    height: 25rem;
+}
+
+@media (max-width: 576px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 85vw;
+        height: calc(85vw/21);
+    }
+
+    .filter {
+        position: static;
+        width: 100%;
+        padding: 0;
+    }
+
+    .listFilter {
+        width: 100%;
+        margin-top: 2.5rem;
+        margin-bottom: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listFilter li {
+        flex: 1
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .listContentItem {
+        padding: 1.25rem 0;
+    }
+
+    .projectPhoto {
+        width: 90vw;
+        height: calc(90vw/1.5);
+    }
 }

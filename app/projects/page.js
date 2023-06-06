@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 import s from './page.module.css';
+import Image from 'next/image';
+import logo from '../../public/logo.svg';
 
 const data = [
   {
@@ -99,7 +101,9 @@ export default function Projects() {
   return (
     <div className={s.container}>
       <div className={s.filter}>
-        <div className={s.logo}>Сервис B+</div>
+        <div className={s.logo}>
+          <Image src={logo} width={450} height={40} alt="Логотип" />
+        </div>
         <div>
           <ul className={s.listFilter} onClick={filterHandler}>
             {filterItem.map((el, i) => (

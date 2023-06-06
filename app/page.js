@@ -6,6 +6,8 @@ import photo1 from '../public/photo1.jpg';
 import photo2 from '../public/photo2.jpg';
 import photo3 from '../public/photo3.jpg';
 import arrow from '../public/arrow.png';
+import logo from '../public/logo.svg';
+
 import { useLayoutEffect, useState } from 'react';
 import Link from 'next/link';
 
@@ -74,7 +76,7 @@ export default function Home() {
           className={s.fonMain}
         />
         <div className={s.blockText}>
-          <span className={s.title}>Сервис B+</span>
+          <Image src={logo} width={900} alt="Логотип" />
           <span className={s.text}>
             Любим недвижимоcть, <br></br> как людей
           </span>

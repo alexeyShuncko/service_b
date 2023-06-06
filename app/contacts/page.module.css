@@ -6,6 +6,7 @@
     min-height: calc(100vh - 3rem);
     gap: 6.25rem;
     position: relative;
+    margin-top: 3rem;
 }
 
 .container::after {

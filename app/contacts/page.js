@@ -1,9 +1,11 @@
 import s from './page.module.css';
+import Image from 'next/image';
+import logo from '../../public/logo.svg';
 
 export default function Contacts() {
   return (
     <div className={s.container}>
-      <span className={s.title}>Сервис B+</span>
+      <Image src={logo} width={900} alt="Логотип" />
       <ul>
         <li>
           <a href="tel:+84956656253">8 (495) 665-62-53</a>

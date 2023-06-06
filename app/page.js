@@ -91,7 +91,7 @@ export default function Home() {
           className={s.fon}
           style={{ opacity: 0 }}
         />
-        <Link href={'/projects'} className={s.linkText}>
+        <Link href={'/projects/1'} className={s.linkText}>
           <span className={s.textName}>Ресторан в горах</span>{' '}
         </Link>
         <div className={s.arrowBlock}>
@@ -107,7 +107,7 @@ export default function Home() {
           className={s.fon}
           style={{ opacity: 0 }}
         />
-        <Link href={'/projects'} className={s.linkText}>
+        <Link href={'/projects/2'} className={s.linkText}>
           <span className={s.textName}>MOD</span>
         </Link>
         <div className={s.arrowBlock}>
@@ -123,7 +123,7 @@ export default function Home() {
           className={s.fon}
           style={{ opacity: 0 }}
         />
-        <Link href={'/projects'} className={s.linkText}>
+        <Link href={'/projects/3'} className={s.linkText}>
           <span className={s.textName}>Гай-Кодзор</span>
         </Link>
         <div className={s.arrowBlock}>

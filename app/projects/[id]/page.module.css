@@ -1,0 +1,45 @@
+.container {
+    padding: 1.25rem;
+    display: flex;
+    margin-top: 3rem;
+    background: var(--clrLight);
+    min-height: 100vh;
+    animation: hid 1s;
+}
+
+@keyframes hid {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.filter {
+    position: fixed;
+    width: 50%;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.filter div {
+    flex: 1;
+}
+
+.description {
+    font-size: 1.5625rem;
+}
+
+.photoList {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.content {
+    margin-left: 50vw;
+}

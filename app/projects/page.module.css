@@ -2,6 +2,19 @@
     padding: 1.25rem;
     display: flex;
     margin-top: 3rem;
+    background: var(--clrLight);
+    min-height: 100vh;
+    animation: hid 1s;
+}
+
+@keyframes hid {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .filter {
@@ -68,7 +81,6 @@
 
 .content {
     margin-left: 50vw;
-    flex: 1;
 }
 
 .listContentItem {

@@ -5,6 +5,8 @@
 }
 
 .filter {
+    position: fixed;
+    width: 50%;
     padding: 1.25rem;
 }
 
@@ -12,9 +14,12 @@
     display: flex;
     gap: 2rem;
     padding: 0.625rem 0;
-    border-bottom: 0.0625rem solid var(--clrMain);
+    border-bottom: 0.0625rem solid var(--clrOlive);
     margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    width: 75%;
 }
+
 
 .listFilter li {
     font-size: 1.25rem;
@@ -27,10 +32,52 @@
     color: var(--clrMain);
 }
 
+.listCategory {
+
+    padding: 1.5625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.itemLi {
+    font-size: 1.125rem;
+    transition: 0.2s;
+}
+
+.itemLi:hover {
+    color: var(--clrOlive);
+}
+
+.activeLi {
+    font-size: 1.125rem;
+    color: var(--clrOlive);
+    font-weight: 800;
+    font-size: 1.5rem;
+    transition: 0.2s;
+}
+
 
 .logo {
     font-weight: 800;
     font-size: 4rem;
     color: var(--clrMain);
     text-transform: uppercase;
+}
+
+.content {
+    margin-left: 50vw;
+    flex: 1;
+}
+
+.listContentItem {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 1.25rem;
+}
+
+.listContentItem span {
+    font-size: 1.5625rem;
 }

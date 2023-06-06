@@ -5,7 +5,7 @@ import logo from '../../public/logo.svg';
 export default function Contacts() {
   return (
     <div className={s.container}>
-      <Image src={logo} width={900} alt="Логотип" />
+      <Image src={logo} width={900} alt="Логотип" className={s.logoImg} />
       <ul>
         <li>
           <a href="tel:+84956656253">8 (495) 665-62-53</a>

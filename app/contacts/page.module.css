@@ -21,13 +21,14 @@
     z-index: -1;
 }
 
+@keyframes hid {
+    0% {
+        opacity: 0;
+    }
 
-.title {
-    font-size: 8.75rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: var(--clrMain);
-    z-index: 10;
+    100% {
+        opacity: 1;
+    }
 }
 
 .container ul {
@@ -35,7 +36,14 @@
     width: 70%;
     justify-content: center;
     align-items: center;
+    animation: hid 1s;
 }
+
+.logoImg {
+    animation: hid 0.5s;
+}
+
+
 
 .container ul li {
     flex: 1;

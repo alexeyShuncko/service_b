@@ -102,7 +102,7 @@ export default function Projects() {
     <div className={s.container}>
       <div className={s.filter}>
         <div className={s.logo}>
-          <Image src={logo} width={450} height={40} alt="Логотип" />
+          <Image src={logo} width={450} alt="Логотип" />
         </div>
         <div>
           <ul className={s.listFilter} onClick={filterHandler}>

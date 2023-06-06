@@ -76,7 +76,7 @@ export default function Home() {
           className={s.fonMain}
         />
         <div className={s.blockText}>
-          <Image src={logo} width={900} alt="Логотип" />
+          <Image src={logo} width={900} alt="Логотип" className={s.logoImg} />
           <span className={s.text}>
             Любим недвижимоcть, <br></br> как людей
           </span>

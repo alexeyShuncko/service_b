@@ -1,5 +1,14 @@
 .main {}
 
+@keyframes hid {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .container {
     position: relative;
@@ -48,6 +57,10 @@
 
 .blockText {
     position: relative;
+}
+
+.logoImg {
+    animation: hid 1s;
 }
 
 .text {
@@ -102,14 +115,4 @@
 
 .myFooter div:nth-child(2) {
     cursor: pointer;
-}
-
-@keyframes hid {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }

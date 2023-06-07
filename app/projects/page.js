@@ -4,147 +4,13 @@ import { useEffect, useState } from 'react';
 import s from './page.module.css';
 import Image from 'next/image';
 import logo from '../../public/logo.svg';
-import foto1 from '../../public/photo1.jpg';
-import foto2 from '../../public/photo2.jpg';
-import foto3 from '../../public/photo3.jpg';
 import Link from 'next/link';
+import { dataInit } from '../../data/data';
 
 export default function Projects() {
   const [filter, setFilter] = useState('Тип объекта');
   const [typeState, setTypeState] = useState('');
 
-  const dataInit = [
-    {
-      id: 1,
-      name: 'Савёловский сити',
-      type: 'БЦ',
-      year: '2017',
-      status: 'Активный',
-      service: 'Управление коммерческой недвижимостью',
-      description: `Горный ресторан в Хибинах – это
-бетонное плато, интегрированное в
-скальное основание, с панорамным
-остеклением по периметру.`,
-      image: foto1,
-    },
-    {
-      id: 2,
-      name: 'Дискавери',
-      type: 'TЦ',
-      year: '2021',
-      status: 'Активный',
-      service: 'Управление коммерческой недвижимостью',
-      description: `Горный ресторан в Хибинах – это
-бетонное плато, интегрированное в
-скальное основание, с панорамным
-остеклением по периметру.`,
-      image: foto2,
-    },
-    {
-      id: 3,
-      name: 'Фили град',
-      type: 'ТЦ',
-      year: '2021', //нет года в таблице
-      status: 'Активный',
-      service: 'Управление коммерческой недвижимостью',
-      description: `Горный ресторан в Хибинах – это
-бетонное плато, интегрированное в
-скальное основание, с панорамным
-остеклением по периметру.`,
-      image: foto3,
-    },
-    {
-      id: 4,
-      name: 'ФИЛИ',
-      type: 'ДОУ',
-      year: '2022',
-      status: 'Активный',
-      service: 'Управление коммерческой недвижимостью',
-      description: `Горный ресторан в Хибинах – это
-бетонное плато, интегрированное в
-скальное основание, с панорамным
-остеклением по периметру.`,
-      image: foto1,
-    },
-    {
-      id: 5,
-      name: 'ЯСНЫЙ',
-      type: 'ДОУ',
-      year: '2022',
-      status: 'Активный',
-      service: 'Управление коммерческой недвижимостью',
-      description: `Горный ресторан в Хибинах – это
-бетонное плато, интегрированное в
-скальное основание, с панорамным
-остеклением по периметру.`,
-      image: foto2,
-    },
-    {
-      id: 6,
-      name: 'ПЕРОВСКИЙ',
-      type: 'ДОУ',
-      year: '2022',
-      status: 'Активный',
-      service: 'Управление коммерческой недвижимостью',
-      description: `Горный ресторан в Хибинах – это
-бетонное плато, интегрированное в
-скальное основание, с панорамным
-остеклением по периметру.`,
-      image: foto3,
-    },
-    {
-      id: 7,
-      name: 'Селигер сити',
-      type: 'Стрит',
-      year: '2022',
-      status: 'Активный',
-      service: 'Управление коммерческой недвижимостью',
-      description: `Горный ресторан в Хибинах – это
-бетонное плато, интегрированное в
-скальное основание, с панорамным
-остеклением по периметру.`,
-      image: foto1,
-    },
-    {
-      id: 8,
-      name: 'ICITY',
-      type: 'БЦ',
-      year: '2023',
-      status: 'Активный',
-      service: 'Консалтинг',
-      description: `Горный ресторан в Хибинах – это
-бетонное плато, интегрированное в
-скальное основание, с панорамным
-остеклением по периметру.`,
-      image: foto2,
-    },
-    {
-      id: 9,
-      name: 'Никольская',
-      type: 'МФК',
-      year: '2022',
-      status: 'Завершён',
-      service: 'Консалтинг',
-      description: `Горный ресторан в Хибинах – это
-бетонное плато, интегрированное в
-скальное основание, с панорамным
-остеклением по периметру.`,
-      image: foto3,
-    },
-    {
-      id: 10,
-      name: 'ТЦ Коньково',
-      type: 'ТЦ',
-      year: '2022',
-      status: 'Завершён',
-      service: 'Управление коммерческой недвижимостью',
-      description: `Горный ресторан в Хибинах – это
-бетонное плато, интегрированное в
-скальное основание, с панорамным
-остеклением по периметру.`,
-      image: foto1,
-    },
-  ];
   const data = dataInit
     .sort((a, b) => {
       if (filter === 'Тип объекта') {
@@ -267,7 +133,7 @@ export default function Projects() {
               <Link href={`/projects/${el.id}`} className={s.listContentItem}>
                 <div className={s.projectPhoto}>
                   <Image
-                    src={el.image}
+                    src={el.image[0]}
                     fill={true}
                     alt="Проект"
                     sizes="(max-width: 768px) 100vw,

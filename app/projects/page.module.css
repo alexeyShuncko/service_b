@@ -1,9 +1,9 @@
 .container {
     padding: 1.25rem;
     display: flex;
-    margin-top: 2rem;
     background: var(--clrLight);
     min-height: 100vh;
+    margin-top: 2rem;
     animation: hid 1s;
 }
 
@@ -38,7 +38,6 @@
     font-size: 1rem;
     cursor: pointer;
     transition: 0.1s;
-    color: var(--clrOlive);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +45,7 @@
 }
 
 .listFilter li.activeItem {
-    color: var(--clrMain);
+    color: var(--clrOlive);
 }
 
 .listCategory {
@@ -107,11 +106,13 @@
 @media (max-width: 576px) {
     .container {
         flex-direction: column;
+        margin-top: 0;
     }
 
     .logo {
-        width: 85vw;
-        height: calc(85vw/21);
+        width: 70vw;
+        height: calc(70vw/21);
+        margin-top: 1rem;
     }
 
     .filter {

@@ -40,6 +40,9 @@
 }
 
 .logoImg {
+    position: relative;
+    width: 56.25rem;
+    height: 2.68rem;
     animation: hid 0.5s;
 }
 
@@ -56,4 +59,21 @@
 
 .text {
     font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+    .container::after {
+        background: url('../../public/contactsFon.jpg') center;
+    }
+
+    .logoImg {
+        width: 90vw;
+        height: calc(90vw/21);
+    }
+
+    .container ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
 }

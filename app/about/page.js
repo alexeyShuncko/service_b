@@ -180,7 +180,7 @@ export default function About() {
         )}
 
         {filter === 'Клиенты' && (
-          <ul className={s.listFhotosTeam}>
+          <ul className={s.listFhotosСlients}>
             <li className={s.clients}>
               {arrClients.map((ico, i) => (
                 <Image src={ico} width={120} height={120} alt="Фото" key={i} />

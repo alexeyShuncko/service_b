@@ -39,11 +39,11 @@
     font-size: 1rem;
     cursor: pointer;
     transition: 0.1s;
-    color: var(--clrOlive);
+
 }
 
 .listFilter li.activeItem {
-    color: var(--clrMain);
+    color: var(--clrOlive);
 }
 
 .listCategory {
@@ -137,17 +137,22 @@
     font-size: 1.5625rem;
 }
 
+
+
 .clients {
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem;
-
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.25rem;
 }
 
 
 @media (max-width: 576px) {
     .container {
         flex-direction: column;
+        margin-top: 0;
     }
 
     .filter {
@@ -178,8 +183,9 @@
     }
 
     .logo {
-        width: 85vw;
-        height: calc(85vw/21);
+        width: 70vw;
+        height: calc(70vw/21);
+        margin-top: 1rem;
     }
 
     .teamPhotos {

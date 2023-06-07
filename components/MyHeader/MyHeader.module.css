@@ -9,19 +9,19 @@
     box-shadow: 0px 0px 10px var(--clrMain);
 }
 
-.myHeader ul {
+.listMainMenu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 1.5625rem;
 }
 
-.myHeader ul li {
+.listMainMenu li {
     transition: 0.1s;
     color: white;
 }
 
-.myHeader ul li:hover {
+.listMainMenu li:hover {
     color: var(--clrOlive);
 }
 
@@ -29,16 +29,75 @@
     color: var(--clrOlive);
 }
 
+.listMenuHidden {
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    padding: 0.625rem;
+    border-radius: 0.3125rem;
+    background: var(--clrLight);
+    animation: menu 0.5s;
+    border: 1px solid var(--clrOlive);
+    min-width: 33vw;
+}
+
+@keyframes menu {
+    0% {
+        opacity: 0;
+        transform: translateX(3.125rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hiddenMenuBlock {
+    display: none;
+}
+
+.hiddenMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3125rem;
+    align-items: center;
+    background: var(--clrLight);
+    border-radius: 50%;
+    width: 3.125rem;
+    height: 3.125rem;
+    cursor: pointer;
+}
+
+.hiddenMenu div {
+    width: 2rem;
+    height: 0.1875rem;
+    background: var(--clrMain);
+    border-radius: 0.25rem;
+    transition: 0.2s;
+}
+
+.hiddenMenu:hover div {
+    background: var(--clrOlive);
+}
 
 
 @media (max-width: 576px) {
     .myHeader {
-        padding: 0.625rem;
-        ;
+        padding: 1rem;
+        background: none;
+        box-shadow: none;
     }
 
-    .myHeader ul {
-        justify-content: center;
-        gap: 1.125rem;
+    .listMainMenu {
+        display: none;
+    }
+
+    .hiddenMenuBlock {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
     }
 }

@@ -60,6 +60,7 @@
     .container {
         flex-direction: column;
         gap: 1.25rem;
+        margin-top: 0;
     }
 
     .filter {
@@ -80,7 +81,8 @@
     }
 
     .logo {
-        width: 85vw;
-        height: calc(85vw/21);
+        width: 70vw;
+        height: calc(70vw/21);
+        margin-top: 1rem;
     }
 }

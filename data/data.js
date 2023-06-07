@@ -1,6 +1,12 @@
-import sav1 from '../public/project/savelovski/sav1.jpg';
-import sav2 from '../public/project/savelovski/sav2.jpg';
-import sav3 from '../public/project/savelovski/sav3.jpg';
+import sav1 from '../public/project/savelovski/sav1.JPG';
+import sav2 from '../public/project/savelovski/sav2.JPG';
+import sav3 from '../public/project/savelovski/sav3.JPG';
+import dis1 from '../public/project/discovery/dis1.jpg';
+import dis2 from '../public/project/discovery/dis2.jpg';
+import dis3 from '../public/project/discovery/dis3.jpg';
+import dis4 from '../public/project/discovery/dis4.jpg';
+import dis5 from '../public/project/discovery/dis5.jpg';
+import dis6 from '../public/project/discovery/dis6.jpeg';
 import foto1 from '../public/photo2.jpg';
 import foto2 from '../public/photo2.jpg';
 import foto3 from '../public/photo3.jpg';
@@ -30,7 +36,7 @@ export const dataInit = [
 бетонное плато, интегрированное в
 скальное основание, с панорамным
 остеклением по периметру.`,
-    image: [foto1, foto2, foto3],
+    image: [dis1, dis2, dis3, dis4, dis5, dis6],
   },
   {
     id: 3,
